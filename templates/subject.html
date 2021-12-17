@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <base href="../static/template.html">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" type="image/gif" sizes="16x16">
+    <title>NAME</title>
+
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" id="navbar" aria-label="Main navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../templates/homepage.html" title="homepage">
+          <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-right" alt="edit">
+          <span class="text-light">Homepage</span>
+        </a>
+
+        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <button type="button" class="btn btn-outline-primary dropdown-toggle browseMenus" id="levelsMenu" data-bs-toggle="dropdown" aria-expanded="false" title="Browse by levels">
+                  Browse by levels
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="levelsMenu">
+                  <li><a class="dropdown-item" href="../templates/level.html">Level 0</a></li>
+                  <li><a class="dropdown-item disabled">More levels are coming soon!</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <button type="button" class="btn btn-outline-primary dropdown-toggle browseMenus" id="subjectsMenu" data-bs-toggle="dropdown" aria-expanded="false" title="Browse by subjects">
+                  Browse by subjects
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="subjectsMenu">
+                  <li><a class="dropdown-item disabled">More subjects are coming soon!</a></li>
+                </ul>
+            </li>
+          </ul>
+
+          <span class="dropdown">
+            <button class="btn btn-outline-primary dropdown-toggle settingsMenu" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" aria-expanded="false" title="Notifications">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+              </svg>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+              <li class="dropdown-item disabled" title="Coming soon!">
+                This feature will be Available soon!
+              </li>
+            </ul>
+          </span>
+
+          <span class="dropdown">
+            <button class="btn btn-outline-primary dropdown-toggle settingsMenu" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" aria-expanded="false" title="Settings">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+              </svg>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+              <li class="dropdown-item" title="Coming soon!">
+                <span class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" disabled/>
+                  <label class="form-check-label" for="flexSwitchCheckDefault">Dark theme</label>
+                </span>
+              </li>
+              <!-- <li class="dropdown-item disabled" title="Arabic will be Available soon!">
+                Language:
+                <button type="button" class="btn btn-primary dropdown-toggle">en</button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-itme" href="#">en</a>
+                  <a class="dropdown-itme" href="#">en</a>
+                </div>
+              </li> -->
+            </ul>
+          </span>
+
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" title="Search">
+            <button class="btn btn-outline-primary" type="submit" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="nav-scroller bg-body shadow-sm"></div>
+
+    <main class="container" id="main">
+
+      <div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm">
+        <img class="me-3" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="Math 1" width="48" height="38" title="Math 1">
+        <div class="lh-1">
+          <h1 class="h6 mb-0 text-white lh-1">Math 1</h1>
+            <small>some info</small>
+        </div>
+      </div>
+
+      <div class="my-3 p-3 bg-body rounded shadow-sm">
+        <h6 class="border-bottom pb-2 mb-0">Dr. Mervat Mikhail</h6>
+        <div class="d-flex pt-3">
+          <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Conic sections</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+          <strong class="d-block text-gray-dark">Conic sections</strong>
+        </div>
+        <div class="container p-3">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL7snZ0LSsq3h8ghbP6Ub0pNWXn24cgDpB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- <script type="text/javascript" src="/js/jquery-3.5.1.slim.min.js"></script> -->
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/master.js"></script>
+
+  </body>
+</html>
